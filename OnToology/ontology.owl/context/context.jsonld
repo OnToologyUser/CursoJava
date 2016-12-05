@@ -7,6 +7,10 @@
     "Route" : {
       "@id" : "http://smartsevilla.es/ontology/Route"
     },
+    "agency_timezone" : {
+      "@id" : "http://smartsevilla.es/ontology/agency_timezone",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
     "Line" : {
       "@id" : "http://smartsevilla.es/ontology/Line"
     },
@@ -18,9 +22,17 @@
       "@id" : "http://smartsevilla.es/ontology/trip_id",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
+    "agency_lang" : {
+      "@id" : "http://smartsevilla.es/ontology/agency_lang",
+      "@type" : "http://www.w3.org/2001/XMLSchema#language"
+    },
     "end_date" : {
       "@id" : "http://smartsevilla.es/ontology/end_date",
       "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "agency_id" : {
+      "@id" : "http://smartsevilla.es/ontology/agency_id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
     },
     "service_id" : {
       "@id" : "http://smartsevilla.es/ontology/service_id",
@@ -40,6 +52,10 @@
     "Street" : {
       "@id" : "http://smartsevilla.es/ontology/Street"
     },
+    "agency_name" : {
+      "@id" : "http://smartsevilla.es/ontology/agency_name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
     "route_id" : {
       "@id" : "http://smartsevilla.es/ontology/route_id",
       "@type" : "http://www.w3.org/2001/XMLSchema#integer"
@@ -47,6 +63,9 @@
     "route_long_name" : {
       "@id" : "http://smartsevilla.es/ontology/route_long_name",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Agency" : {
+      "@id" : "http://smartsevilla.es/ontology/Agency"
     },
     "stop_long" : {
       "@id" : "http://smartsevilla.es/ontology/stop_long",
@@ -72,6 +91,10 @@
       "@id" : "http://smartsevilla.es/ontology/start_date",
       "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
     },
+    "agency_url" : {
+      "@id" : "http://smartsevilla.es/ontology/agency_url",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
     "Service" : {
       "@id" : "http://smartsevilla.es/ontology/Service"
     },
@@ -82,6 +105,10 @@
     "stopsAt" : {
       "@id" : "http://smartsevilla.es/ontology/stopsAt",
       "@type" : "@id"
+    },
+    "agency_phone" : {
+      "@id" : "http://smartsevilla.es/ontology/agency_phone",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "belongsToLine" : {
       "@id" : "http://smartsevilla.es/ontology/belongsToLine",

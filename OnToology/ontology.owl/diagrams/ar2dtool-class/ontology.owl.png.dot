@@ -1,24 +1,30 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "base:Street" "base:Stop" "base:Service" "base:Route" "base:Line" "base:Bus" ; /*classes style*/
-	"base:Route" -> "xsd:string" [ label = "base:route_long_name" ];
+node [shape = rectangle, color="orange"]; "base:Street" "base:Stop" "base:Service" "base:Route" "base:Line" "base:Bus" "base:Agency" ; /*classes style*/
 	"base:Stop" -> "xsd:dateTime" [ label = "base:arrival_time" ];
-	"base:Stop" -> "base:Line" [ label = "base:belongsToLine" ];
+	"base:Agency" -> "xsd:string" [ label = "base:agency_name" ];
 	"base:Stop" -> "xsd:decimal" [ label = "base:stop_lat" ];
-	"base:Stop" -> "xsd:integer" [ label = "base:stop_sequence" ];
 	"base:Service" -> "xsd:dateTime" [ label = "base:start_date" ];
 	"base:Stop" -> "base:Street" [ label = "base:isInStreet" ];
+	"base:Stop" -> "xsd:string" [ label = "base:stop_name" ];
+	"base:Route" -> "xsd:string" [ label = "base:route_short_name" ];
+	"base:Service" -> "xsd:integer" [ label = "base:service_id" ];
+	"base:Agency" -> "xsd:language" [ label = "base:agency_lang" ];
+	"base:Agency" -> "xsd:string" [ label = "base:agency_timezone" ];
+	"base:Route" -> "xsd:string" [ label = "base:route_long_name" ];
+	"base:Stop" -> "base:Line" [ label = "base:belongsToLine" ];
+	"base:Agency" -> "xsd:string" [ label = "base:agency_phone" ];
+	"base:Stop" -> "xsd:integer" [ label = "base:stop_sequence" ];
 	"base:Service" -> "xsd:integer" [ label = "base:exception_type" ];
 	"base:Route" -> "xsd:string" [ label = "base:trip_id" ];
-	"base:Stop" -> "xsd:string" [ label = "base:stop_name" ];
 	"base:Stop" -> "xsd:dateTime" [ label = "base:departure_time" ];
-	"base:Route" -> "xsd:string" [ label = "base:route_short_name" ];
-	"base:Route" -> "xsd:integer" [ label = "base:route_type" ];
 	"base:Service" -> "xsd:dateTime" [ label = "base:end_date" ];
-	"base:Service" -> "xsd:integer" [ label = "base:service_id" ];
+	"base:Route" -> "xsd:integer" [ label = "base:route_type" ];
+	"base:Agency" -> "xsd:string" [ label = "base:agency_url" ];
 	"base:Bus" -> "base:Stop" [ label = "base:stopsAt" ];
 	"base:Stop" -> "xsd:decimal" [ label = "base:stop_long" ];
+	"base:Agency" -> "xsd:decimal" [ label = "base:agency_id" ];
 	"base:Stop" -> "xsd:integer" [ label = "base:stop_id" ];
 	"base:Bus" -> "base:Street" [ label = "base:passesBy" ];
 	"base:Route" -> "xsd:integer" [ label = "base:route_id" ];

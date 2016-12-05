@@ -1,0 +1,158 @@
+@prefix :        <http://smartsevilla.es/ontology/> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml:     <http://www.w3.org/XML/1998/namespace> .
+
+:stop_id
+      a       owl:DatatypeProperty ;
+      rdfs:domain :Stop ;
+      rdfs:range xsd:integer .
+
+:stop_name
+      a       owl:DatatypeProperty ;
+      rdfs:domain :Stop ;
+      rdfs:range xsd:string .
+
+:start_date
+      a       owl:DatatypeProperty ;
+      rdfs:domain :Service ;
+      rdfs:range xsd:dateTime .
+
+:route_short_name
+      a       owl:DatatypeProperty ;
+      rdfs:domain :Route ;
+      rdfs:range xsd:string .
+
+:Route
+      a       owl:Class .
+
+:route_long_name
+      a       owl:DatatypeProperty ;
+      rdfs:domain :Route ;
+      rdfs:range xsd:string .
+
+:stop_lat
+      a       owl:DatatypeProperty ;
+      rdfs:domain :Stop ;
+      rdfs:range xsd:decimal .
+
+:stop_long
+      a       owl:DatatypeProperty ;
+      rdfs:domain :Stop ;
+      rdfs:range xsd:decimal .
+
+:Agency
+      a       owl:Class .
+
+:agency_timezone
+      a       owl:DatatypeProperty ;
+      rdfs:domain :Agency ;
+      rdfs:range xsd:string .
+
+:agency_url
+      a       owl:DatatypeProperty ;
+      rdfs:domain :Agency ;
+      rdfs:range xsd:string .
+
+:     a       owl:Ontology .
+
+:Bus  a       owl:Class .
+
+:agency_phone
+      a       owl:DatatypeProperty ;
+      rdfs:domain :Agency ;
+      rdfs:range xsd:string .
+
+:agency_name
+      a       owl:DatatypeProperty ;
+      rdfs:domain :Agency ;
+      rdfs:range xsd:string .
+
+:stopsAt
+      a       owl:ObjectProperty ;
+      rdfs:domain :Bus ;
+      rdfs:range :Stop .
+
+:departure_time
+      a       owl:DatatypeProperty ;
+      rdfs:domain :Stop ;
+      rdfs:range xsd:dateTime .
+
+:Stop
+      a       owl:Class .
+
+:route_type
+      a       owl:DatatypeProperty ;
+      rdfs:domain :Route ;
+      rdfs:range xsd:integer .
+
+:isInStreet
+      a       owl:ObjectProperty ;
+      rdfs:domain :Stop ;
+      rdfs:range :Street .
+
+:agency_id
+      a       owl:DatatypeProperty ;
+      rdfs:domain :Agency ;
+      rdfs:range xsd:decimal .
+
+:passesBy
+      a       owl:ObjectProperty ;
+      rdfs:domain :Bus , :Line ;
+      rdfs:range :Street .
+
+:Street
+      a       owl:Class .
+
+:route_id
+      a       owl:DatatypeProperty ;
+      rdfs:domain :Route ;
+      rdfs:range xsd:integer .
+
+:belongsToLine
+      a       owl:ObjectProperty ;
+      rdfs:domain :Stop ;
+      rdfs:range :Line .
+
+:end_date
+      a       owl:DatatypeProperty ;
+      rdfs:domain :Service ;
+      rdfs:range xsd:dateTime .
+
+:stop_sequence
+      a       owl:DatatypeProperty ;
+      rdfs:domain :Stop ;
+      rdfs:range xsd:integer .
+
+:Line
+      a       owl:Class .
+
+:trip_id
+      a       owl:DatatypeProperty ;
+      rdfs:domain :Route ;
+      rdfs:range xsd:string .
+
+:Service
+      a       owl:Class .
+
+:exception_type
+      a       owl:DatatypeProperty ;
+      rdfs:domain :Service ;
+      rdfs:range xsd:integer .
+
+:agency_lang
+      a       owl:DatatypeProperty ;
+      rdfs:domain :Agency ;
+      rdfs:range xsd:language .
+
+:service_id
+      a       owl:DatatypeProperty ;
+      rdfs:domain :Service ;
+      rdfs:range xsd:integer .
+
+:arrival_time
+      a       owl:DatatypeProperty ;
+      rdfs:domain :Stop ;
+      rdfs:range xsd:dateTime .
