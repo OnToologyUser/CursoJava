@@ -1,0 +1,102 @@
+{
+  "@context" : {
+    "isInStreet" : {
+      "@id" : "http://smartsevilla.es/ontology/isInStreet",
+      "@type" : "@id"
+    },
+    "Route" : {
+      "@id" : "http://smartsevilla.es/ontology/Route"
+    },
+    "Line" : {
+      "@id" : "http://smartsevilla.es/ontology/Line"
+    },
+    "departure_time" : {
+      "@id" : "http://smartsevilla.es/ontology/departure_time",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "trip_id" : {
+      "@id" : "http://smartsevilla.es/ontology/trip_id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "end_date" : {
+      "@id" : "http://smartsevilla.es/ontology/end_date",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "service_id" : {
+      "@id" : "http://smartsevilla.es/ontology/service_id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Bus" : {
+      "@id" : "http://smartsevilla.es/ontology/Bus"
+    },
+    "arrival_time" : {
+      "@id" : "http://smartsevilla.es/ontology/arrival_time",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "stop_lat" : {
+      "@id" : "http://smartsevilla.es/ontology/stop_lat",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "Street" : {
+      "@id" : "http://smartsevilla.es/ontology/Street"
+    },
+    "route_id" : {
+      "@id" : "http://smartsevilla.es/ontology/route_id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "route_long_name" : {
+      "@id" : "http://smartsevilla.es/ontology/route_long_name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "stop_long" : {
+      "@id" : "http://smartsevilla.es/ontology/stop_long",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "passesBy" : {
+      "@id" : "http://smartsevilla.es/ontology/passesBy",
+      "@type" : "@id"
+    },
+    "exception_type" : {
+      "@id" : "http://smartsevilla.es/ontology/exception_type",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "stop_id" : {
+      "@id" : "http://smartsevilla.es/ontology/stop_id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "stop_name" : {
+      "@id" : "http://smartsevilla.es/ontology/stop_name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "start_date" : {
+      "@id" : "http://smartsevilla.es/ontology/start_date",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "Service" : {
+      "@id" : "http://smartsevilla.es/ontology/Service"
+    },
+    "route_type" : {
+      "@id" : "http://smartsevilla.es/ontology/route_type",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "stopsAt" : {
+      "@id" : "http://smartsevilla.es/ontology/stopsAt",
+      "@type" : "@id"
+    },
+    "belongsToLine" : {
+      "@id" : "http://smartsevilla.es/ontology/belongsToLine",
+      "@type" : "@id"
+    },
+    "Stop" : {
+      "@id" : "http://smartsevilla.es/ontology/Stop"
+    },
+    "stop_sequence" : {
+      "@id" : "http://smartsevilla.es/ontology/stop_sequence",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "route_short_name" : {
+      "@id" : "http://smartsevilla.es/ontology/route_short_name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    }
+  }
+}

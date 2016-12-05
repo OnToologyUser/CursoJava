@@ -1,0 +1,125 @@
+@prefix :        <http://smartsevilla.es/ontology/> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml:     <http://www.w3.org/XML/1998/namespace> .
+
+:stop_id
+      a       owl:DatatypeProperty ;
+      rdfs:domain :Stop ;
+      rdfs:range xsd:integer .
+
+:stop_name
+      a       owl:DatatypeProperty ;
+      rdfs:domain :Stop ;
+      rdfs:range xsd:string .
+
+:start_date
+      a       owl:DatatypeProperty ;
+      rdfs:domain :Service ;
+      rdfs:range xsd:dateTime .
+
+:route_short_name
+      a       owl:DatatypeProperty ;
+      rdfs:domain :Route ;
+      rdfs:range xsd:string .
+
+:Route
+      a       owl:Class .
+
+:route_long_name
+      a       owl:DatatypeProperty ;
+      rdfs:domain :Route ;
+      rdfs:range xsd:string .
+
+:stop_lat
+      a       owl:DatatypeProperty ;
+      rdfs:domain :Stop ;
+      rdfs:range xsd:decimal .
+
+:stop_long
+      a       owl:DatatypeProperty ;
+      rdfs:domain :Stop ;
+      rdfs:range xsd:decimal .
+
+:     a       owl:Ontology .
+
+:Bus  a       owl:Class .
+
+:stopsAt
+      a       owl:ObjectProperty ;
+      rdfs:domain :Bus ;
+      rdfs:range :Stop .
+
+:departure_time
+      a       owl:DatatypeProperty ;
+      rdfs:domain :Stop ;
+      rdfs:range xsd:dateTime .
+
+:Stop
+      a       owl:Class .
+
+:isInStreet
+      a       owl:ObjectProperty ;
+      rdfs:domain :Stop ;
+      rdfs:range :Street .
+
+:route_type
+      a       owl:DatatypeProperty ;
+      rdfs:domain :Route ;
+      rdfs:range xsd:integer .
+
+:passesBy
+      a       owl:ObjectProperty ;
+      rdfs:domain :Bus , :Line ;
+      rdfs:range :Street .
+
+:Street
+      a       owl:Class .
+
+:route_id
+      a       owl:DatatypeProperty ;
+      rdfs:domain :Route ;
+      rdfs:range xsd:integer .
+
+:belongsToLine
+      a       owl:ObjectProperty ;
+      rdfs:domain :Stop ;
+      rdfs:range :Line .
+
+:end_date
+      a       owl:DatatypeProperty ;
+      rdfs:domain :Service ;
+      rdfs:range xsd:dateTime .
+
+:stop_sequence
+      a       owl:DatatypeProperty ;
+      rdfs:domain :Stop ;
+      rdfs:range xsd:integer .
+
+:trip_id
+      a       owl:DatatypeProperty ;
+      rdfs:domain :Route ;
+      rdfs:range xsd:string .
+
+:Line
+      a       owl:Class .
+
+:Service
+      a       owl:Class .
+
+:exception_type
+      a       owl:DatatypeProperty ;
+      rdfs:domain :Service ;
+      rdfs:range xsd:integer .
+
+:service_id
+      a       owl:DatatypeProperty ;
+      rdfs:domain :Service ;
+      rdfs:range xsd:integer .
+
+:arrival_time
+      a       owl:DatatypeProperty ;
+      rdfs:domain :Stop ;
+      rdfs:range xsd:dateTime .
